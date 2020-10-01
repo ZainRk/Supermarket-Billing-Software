@@ -70,7 +70,7 @@ class mobiles
 		cout<<"\n  AVAILABLE STOCK OF PRODUCT      "<<stock;
 		if(flag==1)
 		{
-			cout<<"\n\n  DESCRIPTION : NO DESCRIPTION AVAILABLE";
+			cout<<"\n\n  DESCRIPTION : SORRY, NO DESCRIPTION AVAILABLE";
 		}
 		else
 		{
@@ -225,7 +225,7 @@ void mobiles::delete_product()		//delete function
  	fstream file1,fil2;
   	int product_no;
   //	cout<<"\n\n\nDELETE RECORD";
-  	cout<<"\n\n PLEASE ENTER THE PRODUCT NO OF THE PRODUCT YOU WANT TO DELETE : ";
+  	cout<<"\n\n PLEASE ENTER THE PRODUCT NUMBER OF THE PRODUCT YOU WANT TO DELETE : ";
  	cin>>product_no;
   	file1.open("mobiledatabase.dat",ios::in|ios::out);    //opening original file
   	fil2.open("Temp.dat",ios::out);         //opening temporary file
@@ -306,7 +306,7 @@ class computers
 		cout<<"\n  AVAILABLE STOCK OF PRODUCT :    "<<stock;
 		if(flag==1)
 		{
-			cout<<"\n\n  DESCRIPTION : NO DESCRIPTION AVAILABLE";
+			cout<<"\n\n  DESCRIPTION : SORRY, NO DESCRIPTION AVAILABLE";
 		}
 		else
 		{
@@ -397,7 +397,7 @@ void computers::modify_product()
 	file2.close();
 	if(f==0)
 	{
-		cout<<"\n\n PRODUCT NOT FOUND ";
+		cout<<"\n\n SORRY, PRODUCT NOT FOUND ";
 	}
 }
 void computers::display_specific_record(int n)
@@ -426,7 +426,7 @@ void computers::delete_product()		//delete function
  	fstream file2,fil3;
   	int product_no;
   //	cout<<"\n\n\nDELETE RECORD";
-  	cout<<"\n\n PLEASE ENTER THE PRODUCT NO OF THE PRODUCT YOU WANT TO DELETE : ";
+  	cout<<"\n\n PLEASE ENTER THE PRODUCT NUMBER YOU WANT TO DELETE : ";
  	cin>>product_no;
   	file2.open("computerdatabase.dat",ios::in|ios::out);    //opening original file
   	fil3.open("Temp.dat",ios::out);         //opening temporary file
@@ -515,7 +515,7 @@ void create_product()
 		cout<<"\n  AVAILABLE STOCK OF PRODUCT :                 "<<stock;
 		if(flag==1)
 		{
-			cout<<"\n\n  DESCRIPTION : NO DESCRIPTION AVAILABLE";
+			cout<<"\n\n  DESCRIPTION : SORRY, NO DESCRIPTION AVAILABLE";
 		}
 		else
 		{
@@ -634,7 +634,7 @@ void cookings::modify_product()
 	file3.close();
 	if(f==0)
 	{
-		cout<<"\n\n Record Not Found ";
+		cout<<"\n\n Sorry, Record Not Found ";
 	}
 }
 void cookings::display_specific_record(int n)
